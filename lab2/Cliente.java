@@ -1,11 +1,7 @@
 package lab2;
 
-// import java.io.*;
-// import java.util.*;
-
 public class Cliente {
 
-    //nome, cpf, dataNascimento, idade e endereco
     private String nome_cliente;
     private String cpf_cliente;
     private String dataNascimento_cliente;
@@ -87,7 +83,7 @@ public class Cliente {
             return false;
         }
 
-        // Calculando o primeiro digito verificaor
+        // Calcula o primeiro digito verificaor
         int soma1 = 0;
         for (int i = 0; i < 9; i++) {
             char digito = cpf_validado.charAt(i);
@@ -99,7 +95,7 @@ public class Cliente {
             digito1 = 0;
         }
 
-        // Calculando o segundo digito verifiador
+        // Calcula o segundo digito verifiador
         int soma2 = 0;
         for (int i = 0; i < 10; i++) {
             char digito = cpf_validado.charAt(i);
@@ -111,7 +107,7 @@ public class Cliente {
             digito2 = 0;
         }
 
-        // Verificando se ambos os digitos verificadores estão corretos
+        // Verifica se ambos os digitos verificadores estão corretos
         char digito1_char = cpf_validado.charAt(9);
         char digito2_char = cpf_validado.charAt(10);
         int digito1_cpf = Character.digit(digito1_char, 10);
