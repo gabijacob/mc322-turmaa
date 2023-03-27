@@ -9,13 +9,8 @@ public class Main {
         Seguradora seguradora1 = new Seguradora("safecar", "71988785210", "safecar@safecar.com", "rua das rosas");
         Sinistro sinistro1 = new Sinistro("13092010", "rua dos cajueiros");
     
-        // Instancia os métodos da classe Cliente para cliente1
-
-        String nome_cliente1 = cliente1.getNome();
+        // Instancia o método cpf da classe Cliente para cliente1
         String cpf_cliente1 = cliente1.getCpf();
-        String nasc_cliente1 = cliente1.getDataNascimento();
-        int idade_cliente1 = cliente1.getIdade();
-        String endereco_cliente1 = cliente1.getEndereco();
 
         System.out.println("INFORMAÇÕES DO CLIENTE:");
         System.out.println(cliente1.toString());
@@ -27,14 +22,6 @@ public class Main {
         cliente1.setDataNasciemtno("14092002");
         cliente1.setIdade(23);
         cliente1.setEndereco("rua das laranjeiras");
-
-        //fazendo o get novamente para atualizar os dados do cleinte1, e depois imprimindo
-        
-        nome_cliente1 = cliente1.getNome();
-        cpf_cliente1 = cliente1.getCpf();
-        nasc_cliente1 = cliente1.getDataNascimento();
-        idade_cliente1 = cliente1.getIdade();
-        endereco_cliente1 = cliente1.getEndereco();
 
         System.out.println("\nINFORMAÇÕES DO CLIENTE:");
         System.out.println(cliente1.toString());
@@ -126,7 +113,7 @@ public class Main {
         String data_sinistro1 = sinistro1.getData();
         String endereco_sinistro1 = sinistro1.getEndereco();
 
-        System.out.println("INFORMAÇÕES DA SEGURADORA:");
+        System.out.println("INFORMAÇÕES DO SINISTRO:");
         System.out.print("Id:");
         System.out.println(id_sinistro1);
         System.out.print("Data:");
@@ -143,7 +130,7 @@ public class Main {
         data_sinistro1 = sinistro1.getData();
         endereco_sinistro1 = sinistro1.getEndereco();
 
-        System.out.println("INFORMAÇÕES DA SEGURADORA:");
+        System.out.println("INFORMAÇÕES DO SINISTRO:");
         System.out.print("Id:");
         System.out.println(id_sinistro1);
         System.out.print("Data:");
